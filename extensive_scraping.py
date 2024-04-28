@@ -2,7 +2,7 @@ import csv
 import requests
 import time
 
-API_KEY = 'AIzaSyDS__hERYERxRPLCHQ-YJMQ1z6-bSwlpic'
+API_KEY = ''
 
 
 def search_shops(query):
