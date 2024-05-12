@@ -31,6 +31,15 @@ To use the Google Maps API, you must have an API key. This key allows you to mak
 4. Click on "Create Credentials" and select "API key".
 5. Once you have your key, restrict its usage to prevent unauthorized use, by setting application restrictions and limiting API services that the key can access.
 
+### Dependencies
+
+All dependencies required for scraping and GUI operations can be installed via pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ### Configuring the Scraper
 
 The scraper can be customized to target specific business types and cities. For instance, you might want to scrape data for specific business types like 'Local Coffee Shops' or 'Organic Grocery Stores' across various French cities:
@@ -44,9 +53,15 @@ Here is an example of how you might set up these variables in your script:
 business_types = ['Local Coffee Shops', 'Boutique Clothing Stores', 'Artisanal Bakeries', ...]
 cities = ['Paris', 'Marseille', 'Lyon', ...]
 ```
-### Dependencies
 
-All dependencies required for scraping and GUI operations can be installed via pip:
+### Create the Executable
+Navigate to your script's directory in the terminal and run the following command to create a single-file executable:
 
 ```bash
-pip install -r requirements.txt
+pyinstaller --onefile --windowed user_interface.py
+```
+
+Options used:
+
+--onefile: Bundles everything into a single executable file.
+--windowed: Prevents a command line window from appearing upon execution, suitable for GUI applications.
