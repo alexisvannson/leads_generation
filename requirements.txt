@@ -1,3 +1,4 @@
 requests==2.25.1
 Pillow==8.1.0
 tkinter 
+pyinstaller
