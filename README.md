@@ -29,7 +29,7 @@ To use the Google Maps API, you must have an API key. This key allows you to mak
 2. Create a new project or select an existing one.
 3. Navigate to "APIs & Services" > "Credentials".
 4. Click on "Create Credentials" and select "API key".
-5. Once you have your key, restrict its usage to prevent unauthorized use, by setting application restrictions and limiting API services that the key can access and add it in the scraping script.
+5. Once you have your key, restrict its usage to prevent unauthorized use, by setting application restrictions and limiting API services that the key can access and finally add the key in the scraping script.
 
 ### Dependencies
 
